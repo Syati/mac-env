@@ -16,3 +16,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+dmg_package 'Firefox' do
+  source 'http://download.mozilla.org/?product=firefox-25.0&os=osx&lang=ja-JP-mac'
+  action :install
+end
+
+dmg_package 'Virtualbox' do
+  source 'http://download.virtualbox.org/virtualbox/4.3.2/VirtualBox-4.3.2-90405-OSX.dmg'
+  type 'mpkg'
+end
+
+dmg_package "KeyRemap4MacBook" do
+  source "https://pqrs.org/macosx/keyremap4macbook/files/KeyRemap4MacBook-9.0.0.dmg"
+  type "pkg"
+  package_id "org.pqrs.driver.KeyRemap4MacBook"
+  action :install
+end
