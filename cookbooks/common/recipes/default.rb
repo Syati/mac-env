@@ -32,6 +32,8 @@ xz
 zsh
 atool
 npm
+global
+keychain
 }.each do |pkg|
    package pkg do
     action :install
