@@ -16,6 +16,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+dmg_package 'Google Chrome' do
+  dmg_name 'googlechrome'
+  source 'https://dl-ssl.google.com/chrome/mac/stable/GGRM/googlechrome.dmg'
+  action :install
+end
 
 dmg_package 'Firefox' do
   source 'http://download.mozilla.org/?product=firefox-25.0&os=osx&lang=ja-JP-mac'
@@ -25,6 +30,7 @@ end
 dmg_package 'Virtualbox' do
   source 'http://download.virtualbox.org/virtualbox/4.3.2/VirtualBox-4.3.2-90405-OSX.dmg'
   type 'mpkg'
+  action :install
 end
 
 dmg_package "KeyRemap4MacBook" do
